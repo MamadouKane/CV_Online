@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+/* General */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  background: #fff;
+  margin: 40px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+/* Partie Gauche */
+
+.container .left_side {
+  position: relative;
+  background: #003147;
+  padding: 30px;
+}
+
+/* Profile */
+.profile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 25px;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+.profile .image {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.profile .image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile h1 {
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+.profile h2 {
+  color: #fff;
+  font-size: 0.9em;
+  text-align: center;
+  font-weight: 400;
+  /*line-height: 1.2em;  */
+}
+
+/* Coordonnees */
+.coordonnees {
+  padding-top: 25px;
+}
+.title {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.coordonnees ul {
+  position: relative;
+}
+.coordonnees ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+  line-height: 1.4em;
+}
+
+.coordonnees ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #03a9f4;
+}
+.coordonnees ul li span {
+  color: #fff;
+  font-weight: 300px;
+}
+
+/* Competences */
+.competences {
+  padding-top: 25px;
+}
+.competences ul li span {
+  color: #fff;
+  font-weight: 300px;
+}
+.text2 {
+  position: relative;
+  /*list-style: none;*/
+  margin: 10px 0;
+  cursor: pointer;
+  line-height: 1.4em;
+  padding-left: 40px;
+  color: #fff;
+}
+
+.licomp {
+  padding-left: 30px;
+  font-size: 1.1em;
+}
+
+/* Partie Droite */
+
+.container .right_side {
+  position: relative;
+  background: #fff;
+  margin: 40px;
+}
+
+.title_r {
+  color: rgb(10, 10, 10);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.valeur {
+  color: rgb(8, 8, 8);
+  margin-bottom: 15px;
+}
+
+/* Experiences professionnelles */
+.exp_prof .box_exp {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+.exp_prof .box_exp .date {
+  min-width: 140px;
+}
+.exp_prof .box_exp h5 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.exp_prof .box_exp .info h4 {
+  text-transform: uppercase;
+  color: #2a7da2;
+  font-size: 16px;
+}
+
+/* Formations */
+.formations .box_form {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+.formations .university h4 {
+  padding-left: 40px;
+  text-transform: uppercase;
+}
+
+.formations .box_form .date {
+  min-width: 140px;
+}
+.formations .box_form h5 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.formations .box_form .info h4 {
+  text-transform: uppercase;
+  color: #2a7da2;
+  font-size: 16px;
+}
+.formations .box_form .info ul {
+  padding-left: 60px;
+}
