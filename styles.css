@@ -21,7 +21,7 @@ body {
   position: relative;
   width: 100%;
   max-width: 1000px;
-  min-height: 85vh;
+  min-height: 1100px;
   background: #fff;
   margin: 40px;
   display: grid;
